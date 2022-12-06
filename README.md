@@ -3,6 +3,7 @@
 ## PersAM_train.py
 
 Code to learn PersAM. We trained PersAM using 8 GPUs.
+When used, it is necessary to implement a process to normalize clinical_record.
 
 ## PersAM_test.py
 

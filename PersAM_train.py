@@ -1,21 +1,22 @@
+import time
+import sys
+import random
+import csv
+import os
+
+import numpy as np
+import pandas as pd
 import torch
 import torchvision
 from torchvision.transforms import functional as tvf
 from torch import nn, optim
 import torch.nn.functional as F
-import numpy as np
-import pandas as pd
-import csv
-import os
-import Dataset
 import torch.distributed as dist
 import torch.multiprocessing as mp
 from torch.nn.parallel import DistributedDataParallel as DDP
-import time
-import sys
-import random
 
 from model import feature_extractor, MLP_fc1, Multimodal_encoder, PersAM
+import Dataset
 
 #seed
 def seed_set(seed=0):
@@ -187,7 +188,7 @@ def train_model(rank, world_size, cv_test, mag):
 
         ##################################################
         #Complement missing values with the median of the training data
-        #And normalize each column
+        #And need to normalize each column
 
         #Deleted due to processing that cannot be disclosed.
         ##################################################

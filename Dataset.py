@@ -1,11 +1,12 @@
 import os
 import glob
+import random
+
+from PIL import Image
+import numpy as np
 import torch
 from torchvision import transforms
 from torchvision.transforms import functional as tvf
-import random
-from PIL import Image
-import numpy as np
 
 import openslide
 
