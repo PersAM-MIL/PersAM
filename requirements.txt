@@ -1,0 +1,7 @@
+torch==1.9.0
+torchvision==0.10.0
+numpy==1.18.1
+pandas==1.2.4
+pillow==8.4.0
+openslide-python==1.1.2
+einops==0.3.2
