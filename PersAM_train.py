@@ -188,7 +188,8 @@ def train_model(rank, world_size, cv_test, mag):
 
         ##################################################
         #Complement missing values with the median of the training data
-        #And need to normalize each column
+        #When used, it is necessary to implement a process
+        #to normalize clinical_record.
 
         #Deleted due to processing that cannot be disclosed.
         ##################################################

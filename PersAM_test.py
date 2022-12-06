@@ -148,7 +148,8 @@ def test_model(cv_test, mag, seed):
 
     ##################################################
     #Complement missing values with the median of the training data
-    #And normalize each column
+    #When used, it is necessary to implement a process
+    #to normalize clinical_record.
 
     #Deleted due to processing that cannot be disclosed.
     ##################################################
