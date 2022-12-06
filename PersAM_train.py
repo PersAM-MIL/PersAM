@@ -345,7 +345,7 @@ if __name__ == '__main__':
     torch.manual_seed(0)
     torch.cuda.manual_seed(0)
 
-    num_gpu = 8 #GPU数
+    num_gpu = 8 #number of GPU used
 
     args = sys.argv
     cv_tests = [int(i) for i in args[1]]
